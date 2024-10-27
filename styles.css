@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+}
+
+body {
+  padding: 20px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: white;
+    color: black;
+  }
+}
+
+.grid {
+  margin-top: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid__item {
+  border: 1px solid grey;
+  padding: 20px;
+  border-radius: 16px;
+}
